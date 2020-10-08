@@ -1,12 +1,14 @@
 import React from 'react';
-import './styles/App.scss';
+import { Route, Switch} from "react-router-dom"
+import Home from "./pages/Home"
 
 function App() {
   return (
-    <div className="App">
-      hi
-      <button>hello</button>
-    </div>
+    <>
+      <Switch>
+        <Route exact to="/" component={Home} />
+      </Switch>
+    </>
   );
 }
 

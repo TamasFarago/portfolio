@@ -1,0 +1,91 @@
+.home {
+  min-height: 100vh;
+  background: #22262A;
+  position: relative;
+  width: 100vw;
+}
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-text h1 {
+  font-size: 6rem;
+}
+
+.main-text h4 {
+  font-size: 2rem;
+  color: #818d9e;
+}
+
+.main-text button {
+  font-size: 1.5rem;
+  padding: 5px 20px;
+  font-family: 'Staatliches', cursive;
+  margin-top: 50px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.contact {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: -5.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact-list li {
+  -webkit-transition: -webkit-transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
+  transition: -webkit-transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
+  transition: transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
+  transition: transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275), -webkit-transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
+  padding: 10px 20px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.contact-list li:hover {
+  -webkit-transform: translateX(4.5rem);
+          transform: translateX(4.5rem);
+}
+
+.contact-list li span {
+  margin-right: 10px;
+}
+
+.contact-list li svg {
+  height: 1.5rem;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.contact-list li:nth-child(1) {
+  background: #1d1d1d;
+  color: white;
+}
+
+.contact-list li:nth-child(2) {
+  background: #5d9656;
+  color: white;
+}
+
+.contact-list li:nth-child(3) {
+  background: #7e7e7e;
+  color: white;
+}
+/*# sourceMappingURL=Home.css.map */
