@@ -1,0 +1,46 @@
+.contact {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: -5.5rem;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    ul {
+        list-style-type: none;
+    }
+}
+
+.contact-list li {
+    transition: transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
+    padding: 10px 20px;
+    text-align: right;
+
+    &:hover {
+        transform: translateX(4.5rem);
+    }
+    cursor: pointer;
+    span {
+        margin-right: 10px;
+    }
+    svg {
+        height: 1.5rem;
+        transform: translateY(10%);
+    }
+}
+
+.contact-list li:nth-child(1){
+    background: rgb(29, 29, 29);
+    color: white;
+    
+}
+
+.contact-list li:nth-child(2){
+    background: rgb(93, 150, 86);
+    color: white;
+}
+
+.contact-list li:nth-child(3){
+    background: rgb(126, 126, 126);
+    color: white;
+}
+    

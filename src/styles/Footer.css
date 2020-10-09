@@ -1,0 +1,28 @@
+footer {
+  height: 70px;
+  width: 100vw;
+  background: #171A1D;
+  z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  top: 50%;
+  line-height: 70px;
+  font-family: 'Inconsolata', monospace;
+}
+
+footer div:nth-child(1) {
+  color: #818d9e;
+}
+
+.email, .tel {
+  color: white;
+}
+
+.email span, .tel span {
+  color: #818d9e;
+}
+/*# sourceMappingURL=Footer.css.map */

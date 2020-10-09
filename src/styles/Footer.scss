@@ -1,0 +1,27 @@
+@import "./variables";
+
+footer {
+    height: 70px;
+    width: 100vw;
+    background: #171A1D;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 50%;
+    line-height: 70px;
+    font-family: 'Inconsolata', monospace;
+    div{
+        &:nth-child(1) {
+            color: $secondaryColor;
+        }
+    }
+}
+
+.email, .tel {
+    color: white;
+
+    span {
+        color: $secondaryColor
+    }
+}

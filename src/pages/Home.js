@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import Navbar from "../components/Navbar"
 import "../styles/Home.scss"
-import Leaves from "../components/Leaves"
-import { AiFillGithub, AiOutlineMail } from "react-icons/ai"
-import {FaPortrait} from "react-icons/fa"
+import Stars from "../components/Stars"
+import { Link } from "react-router-dom"
+import Navbar from "../components/Navbar"
 
 export default class Home extends Component {
     render() {
@@ -12,17 +11,17 @@ export default class Home extends Component {
                 <Navbar />
                 <div className="main-text">
                     <h1>Hi, i'm Tamas Farago</h1>
-                    <h4>a front-end developer based in Budapest, Hungary. <br/> contact me and let's work together </h4>
-                    <button>View projects</button>
+                    <h4>a front-end developer based in Budapest, Hungary <br/> 
+                        contact me and let's work together </h4>
+                    <Link to="/portfolio">
+                        <button>View projects</button>
+                    </Link>
                 </div>
-                <div className="contact">
-                    <ul className="contact-list">
-                        <li><span>github</span> <AiFillGithub/></li>
-                        <li><span>email</span> <AiOutlineMail /></li>
-                        <li><span>resume</span> <FaPortrait /></li>
-                    </ul>
-                </div>
-                <Leaves />
+        
+                <Stars />
+                
+                
+                
             </section>
         )
     }

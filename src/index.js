@@ -8,9 +8,9 @@ import ScrollToTop from 'react-router-scroll-top'
 
 ReactDOM.render(
   <Router>
-  <ScrollToTop>
-    <App />
-  </ScrollToTop>
+    <ScrollToTop>
+      <App />
+    </ScrollToTop>
   </Router>,
   document.getElementById('root')
 );
