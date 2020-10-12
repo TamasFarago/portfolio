@@ -19,23 +19,4 @@
   margin-top: 10px;
   cursor: pointer;
 }
-
-.hamburger-menu {
-  position: absolute;
-  top: 50%;
-  right: 50px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.line {
-  height: 2px;
-  width: 40px;
-  background: #b9b9b9;
-}
-
-.line-top, .line-middle {
-  margin-bottom: 10px;
-}
 /*# sourceMappingURL=Navbar.css.map */

@@ -1,6 +1,6 @@
 .home {
   min-height: 100vh;
-  background: #22262A;
+  background: #22262a;
   position: relative;
   width: 100vw;
 }
@@ -13,7 +13,7 @@
           transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  z-index: 1;
+  z-index: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
