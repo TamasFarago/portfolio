@@ -1,7 +1,8 @@
 .portfolio {
   min-height: 100vh;
-  background: #22262A;
+  background: #22262a;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .portfolio-container {
@@ -20,20 +21,22 @@
 }
 
 .portfolio-grid {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .project {
   width: 100%;
   height: 100%;
-  margin-top: 40px;
+  -webkit-box-shadow: 1px 4px 15px 3px #1a1a1a;
+  box-shadow: 1px 4px 15px 3px #1a1a1a;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
-.project:after {
-  content: "";
-  display: block;
-  padding-top: calc(100% / (16 / 8));
+.project img {
+  height: auto;
+  width: 100%;
 }
 
 .row1 {
@@ -48,34 +51,95 @@
   display: flex;
 }
 
-.project-1 {
-  background-image: url("../images/project1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.project-container {
+  width: 50%;
+  height: auto;
   margin-right: 30px;
+  overflow: hidden;
+  margin-top: 40px;
 }
 
-.project-2 {
-  background-image: url("../images/project2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.project-3 {
-  background-image: url("../images/project3.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 30px;
-}
-
-.project-4 {
-  background-image: url("../images/project4.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.prjct-4 {
   border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.project {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  position: relative;
+  height: 100%;
+}
+
+.project img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.project:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .2;
+}
+
+.project-1 h5, .project-2 h5, .project-3 h5, .project-4 h5 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-btn {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 2px 20px;
+  background: #e6e6e6;
+  border: 2px solid black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.project-1:hover .btn1 {
+  opacity: 1;
+}
+
+.project-1:hover h5 {
+  opacity: 1;
+}
+
+.project-2:hover .btn2 {
+  opacity: 1;
+}
+
+.project-2:hover h5 {
+  opacity: 1;
+}
+
+.project-3:hover .btn3 {
+  opacity: 1;
+}
+
+.project-3:hover h5 {
+  opacity: 1;
+}
+
+.project-4:hover .btn4 {
+  opacity: 1;
+}
+
+.project-4:hover h5 {
+  opacity: 1;
 }
 /*# sourceMappingURL=Portfolio.css.map */
