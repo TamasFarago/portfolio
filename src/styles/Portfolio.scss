@@ -143,3 +143,106 @@
         opacity: 1;
     }
 }
+
+.project-modal {
+    height:  500px;
+    width:  900px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr .7fr;
+    grid-template-rows: 1fr;
+}
+
+.modal-picture img {
+    height: 500px;
+    width: 100%;
+}
+
+.modal-info {
+    height: 500px;
+    background: #343A41;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.modal-title {
+    h5 {
+        color: rgb(163, 163, 163);
+        font-size: 20px;
+    }
+    h3 {
+        color: white;
+        font-size: 30px;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.project-technology {
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    li {
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border: 1px solid rgba(12, 12, 12, .5);
+        padding: 5px 5px;
+        color: rgb(163, 163, 163);
+        
+    }
+}
+
+
+.modal-about{
+    h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: rgb(163, 163, 163);
+    }
+    p {
+        color: rgb(163, 163, 163);
+        font-family: 'Roboto Mono', monospace;
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+.modal-buttons  {
+    button {
+        font-family: 'Staatliches', cursive;
+        font-size: 15px;
+        padding: 3px 10px;
+        cursor: pointer;
+    }
+    .modal-btn-1 {
+        position: absolute;
+        bottom: 10%;
+        left: 30%;
+        
+    }
+    .eye, .code {
+        transform: translateY(15%);
+    }
+    .modal-btn-2 {
+        position: absolute;
+        bottom: 10%;
+        right: 30%;
+    }
+    
+}
+
+
