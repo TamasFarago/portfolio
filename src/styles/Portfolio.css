@@ -34,6 +34,10 @@
           filter: brightness(90%);
 }
 
+.project button {
+  outline: none;
+}
+
 .project img {
   height: auto;
   width: 100%;
@@ -151,6 +155,10 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  z-index: 3;
 }
 
 .modal-grid {
@@ -190,7 +198,14 @@
   right: 10px;
   font-size: 2rem;
   color: #a3a3a3;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   cursor: pointer;
+}
+
+.modal-close:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .project-technology {
@@ -243,5 +258,28 @@
   position: absolute;
   bottom: 10%;
   right: 30%;
+}
+
+.modal-open {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+}
+
+.modal-closed {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dark-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  z-index: 2;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 /*# sourceMappingURL=Portfolio.css.map */
