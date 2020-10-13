@@ -11,6 +11,8 @@ import modal3 from "../images/project-3-modal.png"
 import modal4 from "../images/project-4-modal.jpg"
 import { AiOutlineClose } from "react-icons/ai"
 import { FaEye, FaCode } from "react-icons/fa"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export default class Portfolio extends Component {
     constructor(props){
@@ -22,6 +24,11 @@ export default class Portfolio extends Component {
         this.togglePort = this.togglePort.bind(this)
         this.closeModal = this.closeModal.bind(this)
     }
+    componentDidMount() {
+        AOS.init({
+          duration : 500
+        });
+      }
 
     toggleEcommerce() {
         this.setState({isEcommerceOpen: !this.state.isEcommerceOpen, isModalOpen: !this.state.isModalOpen})
@@ -53,14 +60,14 @@ export default class Portfolio extends Component {
                    
                     <div className="portfolio-grid">
                         <div className="row1">
-                                <div className="project-container">
+                                <div className="project-container" data-aos="fade-right">
                                     <div className="project-1 project">
                                         <h5>Ecommerce website</h5>
                                         <img src={project1}></img>
                                         <button className="project-btn btn1" onClick={this.toggleEcommerce}>View Project</button>
                                     </div>
                                 </div>
-                                <div className="project-container">
+                                <div className="project-container" data-aos="fade-left">
                                     <div className="project-2 project">
                                         <h5>Gym website</h5>
                                         <img src={project2}></img>
@@ -69,14 +76,14 @@ export default class Portfolio extends Component {
                                 </div>
                         </div>
                         <div className="row2">
-                                <div className="project-container">
+                                <div className="project-container" data-aos="fade-right">
                                     <div className="project-3 project">
                                         <h5>Restaurant website</h5>
                                         <img src={project3}></img>
                                         <button className="project-btn btn3" onClick={this.toggleRes}>View Project</button>
                                     </div>
                                 </div>
-                                <div className="project-container prjct-4">
+                                <div className="project-container prjct-4" data-aos="fade-left">
                                     <div className="project-4 project">
                                         <h5>Portfolio</h5>
                                         <img src={project4} className="four"></img>
@@ -110,12 +117,18 @@ export default class Portfolio extends Component {
                                     <div className="modal-about">
                                         <h5>about</h5>
                                         <div className="about-text">
-                                            <p>I used ReactJs to create this project. The purpose was to showcase my skills in javascript. The project has a very simple but modern UI which was created with only html and css. Has all the functionalities an eCommerce website has. Including shopping-cart, search filter, comment section etc.</p>
+                                            <p>I used ReactJs to create this project. The purpose was to showcase my skills in javascript and React. The project has a very simple but modern UI which was created with only html and css. Has all the functionalities an eCommerce website has. Including shopping-cart, search filter, review section etc.</p>
                                         </div>
                                     </div>
                                     <div className="modal-buttons">
-                                        <button className="modal-btn-1"><FaEye className="eye"/>  demo</button>
-                                        <button className="modal-btn-2"><FaCode className="code" /> code</button>
+                                        <button onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://ecommerce-store-three.vercel.app/'));}} 
+                                            className="modal-btn-1"><FaEye className="eye"/>  demo</button>
+                                        <button onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://github.com/TamasFarago/ecommerce-store'));}} 
+                                            className="modal-btn-2"><FaCode className="code" /> code</button>
                                     </div>
                                 </div>
 
@@ -152,8 +165,14 @@ export default class Portfolio extends Component {
                                         </div>
                                     </div>
                                     <div className="modal-buttons">
-                                        <button className="modal-btn-1"><FaEye className="eye"/>  demo</button>
-                                        <button className="modal-btn-2"><FaCode className="code" /> code</button>
+                                        <button onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://gym-website-blue.vercel.app/'));}} 
+                                            className="modal-btn-1"><FaEye className="eye"/>  demo</button>
+                                        <button onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://github.com/TamasFarago/gym-website'));}} 
+                                            className="modal-btn-2"><FaCode className="code" /> code</button>
                                     </div>
                                 </div>
 
@@ -190,8 +209,14 @@ export default class Portfolio extends Component {
                                         </div>
                                     </div>
                                     <div className="modal-buttons">
-                                        <button className="modal-btn-1"><FaEye className="eye"/>  demo</button>
-                                        <button className="modal-btn-2"><FaCode className="code" /> code</button>
+                                        <button onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://foodncoffee.netlify.app'));}} 
+                                            className="modal-btn-1"><FaEye className="eye"/>  demo</button>
+                                        <button onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://github.com/TamasFarago/restaurant-page'));}} 
+                                            className="modal-btn-2"><FaCode className="code" /> code</button>
                                     </div>
                                 </div>
 
@@ -228,8 +253,14 @@ export default class Portfolio extends Component {
                                         </div>
                                     </div>
                                     <div className="modal-buttons">
-                                        <button className="modal-btn-1"><FaEye className="eye"/>  demo</button>
-                                        <button className="modal-btn-2"><FaCode className="code" /> code</button>
+                                    <button onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://foodncoffee.netlify.app'));}} 
+                                            className="modal-btn-1"><FaEye className="eye"/>  demo</button>
+                                        <button onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://github.com/TamasFarago/portfolio'));}} 
+                                            className="modal-btn-2"><FaCode className="code" /> code</button>
                                     </div>
                                 </div>
 
