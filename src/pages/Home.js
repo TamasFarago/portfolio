@@ -21,7 +21,7 @@ export default class Home extends Component {
                     <h1>Hi, i'm Tamas Farago</h1>
                     <h4>a front-end developer based in Budapest, Hungary <br/> 
                         contact me and let's work together </h4>
-                    <Link to="/portfolio">
+                    <Link to="/projects">
                         <button>View projects</button>
                     </Link>
                 </div>

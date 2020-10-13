@@ -255,7 +255,7 @@ export default class Portfolio extends Component {
                                     <div className="modal-buttons">
                                     <button onClick={(e) => {
                                             e.preventDefault();
-                                            window.open(this.makeHref=('https://foodncoffee.netlify.app'));}} 
+                                            window.open(this.makeHref=('https://tamasfarago.github.io/portfolio'));}} 
                                             className="modal-btn-1"><FaEye className="eye"/>  demo</button>
                                         <button onClick={(e) => {
                                             e.preventDefault();
