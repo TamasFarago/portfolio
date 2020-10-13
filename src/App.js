@@ -1,7 +1,6 @@
 import React from 'react';
 import "./styles/App.css"
 import { Route, Switch} from "react-router-dom"
-import {TransitionGroup, CSSTransition} from "react-transition-group"
 import Home from "./pages/Home"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"

@@ -66,14 +66,14 @@ export default class Portfolio extends Component {
                                 <div className="project-container" data-aos="fade-right">
                                     <div className="project-1 project">
                                         <h5>Ecommerce website</h5>
-                                        <img src={project1}></img>
+                                        <img src={project1} alt="project1"></img>
                                         <button className="project-btn btn1" onClick={this.toggleEcommerce}>View Project</button>
                                     </div>
                                 </div>
                                 <div className="project-container" data-aos="fade-left">
                                     <div className="project-2 project">
                                         <h5>Gym website</h5>
-                                        <img src={project2}></img>
+                                        <img src={project2} alt="project2"></img>
                                         <button className="project-btn btn2" onClick={this.toggleGym}>View Project</button>
                                     </div>
                                 </div>
@@ -82,14 +82,14 @@ export default class Portfolio extends Component {
                                 <div className="project-container" data-aos="fade-right">
                                     <div className="project-3 project">
                                         <h5>Restaurant website</h5>
-                                        <img src={project3}></img>
+                                        <img src={project3} alt="project3"></img>
                                         <button className="project-btn btn3" onClick={this.toggleRes}>View Project</button>
                                     </div>
                                 </div>
                                 <div className="project-container prjct-4" data-aos="fade-left">
                                     <div className="project-4 project">
                                         <h5>Portfolio</h5>
-                                        <img src={project4} className="four"></img>
+                                        <img src={project4} alt="project4" className="four"></img>
                                         <button className="project-btn btn4" onClick={this.togglePort}>View Project</button>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@ export default class Portfolio extends Component {
                         <div className={this.state.isEcommerceOpen? "project-modal modal-open" : "modal-closed project-modal"}>
                             <div className="modal-grid">
                                 <div className="modal-picture">
-                                    <img src={modal1}></img>
+                                    <img src={modal1} alt="modal1"></img>
                                 </div>
                                 <div className="modal-info">
                                     <div className="project-header">
@@ -142,7 +142,7 @@ export default class Portfolio extends Component {
                         <div className={this.state.isGymOpen? "project-modal modal-open" : "modal-closed project-modal"}>
                             <div className="modal-grid">
                                 <div className="modal-picture">
-                                    <img src={modal2}></img>
+                                    <img src={modal2} alt="modal2"></img>
                                 </div>
                                 <div className="modal-info">
                                     <div className="project-header">
@@ -186,7 +186,7 @@ export default class Portfolio extends Component {
                         <div className={this.state.isResOpen? "project-modal modal-open" : "modal-closed project-modal"}>
                             <div className="modal-grid">
                                 <div className="modal-picture">
-                                    <img src={modal3}></img>
+                                    <img src={modal3} alt="modal3"></img>
                                 </div>
                                 <div className="modal-info">
                                     <div className="project-header">
@@ -230,7 +230,7 @@ export default class Portfolio extends Component {
                         <div className={this.state.isPortOpen? "project-modal modal-open" : "modal-closed project-modal"}>
                             <div className="modal-grid">
                                 <div className="modal-picture">
-                                    <img src={modal4}></img>
+                                    <img src={modal4} alt="modal4"></img>
                                 </div>
                                 <div className="modal-info">
                                     <div className="project-header">

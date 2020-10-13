@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import logo from "../images/logo.png"
 import "../styles/Navbar.scss"
-import {NavLink, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 export default class Navbar extends Component {
     render() {
@@ -9,13 +9,9 @@ export default class Navbar extends Component {
             <>
             <div className="navbar">
                 <Link to="/">
-                    <img src={logo}></img>
+                    <img src={logo} alt="logo"></img>
                 </Link>
             </div>
-                
-            
-                
-            
             </>
             
         )
