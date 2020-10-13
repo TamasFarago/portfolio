@@ -114,4 +114,10 @@
 .line-top, .line-middle {
   margin-bottom: 10px;
 }
+
+@media (max-width: 330px) {
+  .menu-container h5 {
+    font-size: 25px;
+  }
+}
 /*# sourceMappingURL=Dropdown.css.map */

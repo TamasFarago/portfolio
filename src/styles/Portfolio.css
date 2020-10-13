@@ -168,6 +168,7 @@
       grid-template-columns: 1fr .7fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  overflow: auto;
 }
 
 .modal-picture img {
@@ -180,6 +181,7 @@
   background: #343A41;
   padding: 10px 15px;
   position: relative;
+  overflow: auto;
 }
 
 .modal-title h5 {
@@ -263,7 +265,7 @@
 .modal-open {
   visibility: visible;
   opacity: 1;
-  z-index: 3;
+  z-index: 999999;
 }
 
 .modal-closed {
@@ -278,8 +280,76 @@
   background: rgba(0, 0, 0, 0.5);
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 99999;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 1170px) {
+  .project h5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 954px) {
+  .project-modal {
+    height: 500px;
+    width: 700px;
+  }
+  .modal-about p {
+    font-size: 10px;
+  }
+  .modal-buttons .modal-btn-1 {
+    left: 20%;
+  }
+  .modal-buttons .modal-btn-2 {
+    right: 20%;
+  }
+}
+
+@media (max-width: 839px) {
+  .project-btn {
+    font-size: 15px;
+  }
+  .project h5 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 665px) {
+  .row1, .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project-container {
+    width: 90%;
+    height: auto;
+    margin-right: 0px;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  .project h5 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 513px) {
+  .project h5 {
+    font-size: 17px;
+  }
+  .project-btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .project h5 {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=Portfolio.css.map */

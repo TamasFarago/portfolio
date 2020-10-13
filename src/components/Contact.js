@@ -11,11 +11,12 @@ export default class Contact extends Component {
             <li onClick={(e) => {
                 e.preventDefault();
                 window.open(this.makeHref=('https://github.com/TamasFarago'));}}>
-            <span>github</span> <AiFillGithub/></li>
+            <span>github</span> <AiFillGithub className="contact-icon"/></li>
             <li onClick={(e) => {
                 e.preventDefault();
-                window.open(this.makeHref=('mailto:tamasendre.farago@gmail.com'));}}><span>email</span> <AiOutlineMail /></li>
-            <li><span>resume</span> <FaPortrait /></li>
+                window.open(this.makeHref=('mailto:tamasendre.farago@gmail.com'));}}>
+                <span>email</span> <AiOutlineMail className="contact-icon"/></li>
+            <li><span>resume</span> <FaPortrait className="contact-icon"/></li>
         </ul>
         </div>
         )

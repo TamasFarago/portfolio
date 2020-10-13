@@ -44,3 +44,21 @@
     color: white;
 }
     
+@media (max-width: 690px) {
+    .contact-list li{
+        height: 40px;
+    //    padding: 0 15px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+       
+    
+       
+    }
+    .contact-icon {
+        font-size: 12px;
+        
+    }
+}

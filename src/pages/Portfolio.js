@@ -26,7 +26,10 @@ export default class Portfolio extends Component {
     }
     componentDidMount() {
         AOS.init({
-          duration : 500
+          duration : 500, disable: function() {
+            let maxWidth = 665;
+            return window.innerWidth < maxWidth;
+          }
         });
       }
 

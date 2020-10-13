@@ -44,5 +44,40 @@
     }
 }
 
+@media (max-width: 830px) {
+    .main-text {
+        h1 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 552px) {
+    .main-text {
+        h1 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .main-text {
+        h1 {
+            font-size: 2rem;
+        }
+        h4 {
+            font-size: .7rem;
+        }
+        button {
+            font-size: 15px;
+        }
+    }
+}
 
 
