@@ -6,6 +6,7 @@ import Footer from "./components/Footer"
 import Contact from "./components/Contact"
 import Portfolio from "./pages/Portfolio"
 import Dropdown from "./components/Dropdown"
+import Error from "./pages/Error"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                 <Switch location={location}>
                   <Route exact path="/" component={Home} />
                   <Route exact path="/projects/" component={Portfolio} />
+                  <Route component={Error} />
                 </Switch>
            
         )}/>

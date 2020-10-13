@@ -1,0 +1,33 @@
+@import "./variables";
+
+.error {
+    height: 100vh;
+    background: $bgColor;
+}
+
+.error-text button {
+   font-family: 'Staatliches', cursive;
+   font-size: 25px;
+   padding: 5px 20px;
+   cursor: pointer;
+   outline: none;
+   border: none;
+   border-radius: 20px;
+   background: rgb(223, 223, 223);
+   &:hover {
+       opacity: .8
+   }
+}
+
+.error-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transform: translateY(50%);
+   h2 {
+       color: white;
+       font-size: 50px;
+       margin-bottom: 50px;
+   }
+}
