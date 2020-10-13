@@ -22,7 +22,7 @@ export default class Dropdown extends Component {
                     <div className="line-bottom line"></div>
                 </div>
                 <div className={this.state.isOpen ? "menu-container container-op" : "menu-container"}>
-                   <NavLink exact to="/" onClick={this.toggleOpen} activeClassName="selected"><h5>About</h5></NavLink>
+                   <NavLink exact to="/about" onClick={this.toggleOpen} activeClassName="selected"><h5>About</h5></NavLink>
                     <NavLink exact to="/portfolio" onClick={this.toggleOpen} activeClassName="selected"><h5>portfolio</h5></NavLink>
                 </div>
             </section>

@@ -17,7 +17,7 @@ function App() {
         render={({location}) => (
          
                 <Switch location={location}>
-                  <Route exact path="/" component={Home} />
+                  <Route exact path="/about" component={Home} />
                   <Route exact path="/portfolio/" component={Portfolio} />
                 </Switch>
            
