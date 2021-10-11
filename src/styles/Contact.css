@@ -3,8 +3,7 @@
   top: 50%;
   z-index: 1;
   left: -5.5rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 1.5rem;
 }
 
@@ -13,18 +12,14 @@
 }
 
 .contact-list li {
-  -webkit-transition: -webkit-transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
-  transition: -webkit-transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
   transition: transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
-  transition: transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275), -webkit-transform 450ms cubic-bezier(0.17, 0.88, 0.32, 1.275);
   padding: 10px 20px;
   text-align: right;
   cursor: pointer;
 }
 
 .contact-list li:hover {
-  -webkit-transform: translateX(4.5rem);
-          transform: translateX(4.5rem);
+  transform: translateX(4.5rem);
 }
 
 .contact-list li span {
@@ -33,8 +28,7 @@
 
 .contact-list li svg {
   height: 1.5rem;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
+  transform: translateY(10%);
 }
 
 .contact-list li:nth-child(1) {

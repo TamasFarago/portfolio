@@ -1,0 +1,34 @@
+.error {
+  height: 100vh;
+  background: #22262a;
+}
+
+.error-text button {
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  padding: 5px 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background: #dfdfdf;
+}
+
+.error-text button:hover {
+  opacity: .8;
+}
+
+.error-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+}
+
+.error-text h2 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=Error.css.map */

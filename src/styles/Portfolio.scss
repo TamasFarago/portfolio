@@ -10,11 +10,10 @@
 .portfolio-container {
   margin: 0 auto;
   width: 80%;
-
 }
 
 .portfolio-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
 }
 
@@ -22,6 +21,64 @@
     margin-top: 1rem;
     color: $secondaryColor;
 }
+
+.select-container {
+    display: flex;
+    align-self: center;
+   justify-content: space-around;
+   margin-top: 100px;
+   margin-left: 15%;
+   margin-right: 15%;
+}
+
+.select-container_box {
+    width: 100%;
+    text-align: center;
+    border: 3px solid white;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0.7;
+
+}
+
+.select-container a {
+    width: 25%;
+    text-decoration: none;
+}
+
+
+
+.select-container_box:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
+    opacity: 1;
+}
+
+
+
+.select-container_box img {
+   
+}
+
+.select-container_box h2 {
+    color: white;
+}
+
+.mobile {
+    margin: 0 auto;
+    width: 50px;
+    height: auto
+}
+
+.desktop {
+    width: 100px;
+    margin: 0 auto;
+}
+
 
 
 .portfolio-grid {
