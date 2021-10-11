@@ -37,7 +37,7 @@ export default function Mobile() {
             <div className="app-item">
                 <div>
                     <h2 className="renter-title">MusicBuddy</h2>
-                    <p>An app created for package delivery drivers who can search for jobs and complete them.</p>
+                    <p>Built for musicians who want to find people to collaborate with.</p>
                 </div>
                 <div className="image-container">
                     <img src={g}/>
