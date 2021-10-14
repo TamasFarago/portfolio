@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from "../components/Navbar"
 import "../styles/Mobile.scss"
-import a from "../images/a.png"
-import b from "../images/b.png"
-import c from "../images/c.png"
-import d from "../images/d.png"
-import e from "../images/e.png"
-import f from "../images/f.png"
-import g from "../images/g.png"
-import h from "../images/h.png"
+import a from "../images/a-min.png"
+import b from "../images/b-min.png"
+import c from "../images/c-min.png"
+import d from "../images/d-min.png"
+import e from "../images/e-min.png"
+import f from "../images/f-min.png"
+import g from "../images/g-min.png"
+import h from "../images/h-min.png"
 import AOS from "aos"
 
 

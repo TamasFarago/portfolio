@@ -2,7 +2,7 @@
     position: fixed;
     top: 50%;
     z-index: 1;
-    left: -5.5rem;
+    left: -5.9rem;
     transform: translateY(-50%);
     font-size: 1.5rem;
     ul {
@@ -16,7 +16,7 @@
     text-align: right;
 
     &:hover {
-        transform: translateX(4.5rem);
+        transform: translateX(4.9rem);
     }
     cursor: pointer;
     span {
@@ -40,7 +40,7 @@
 }
 
 .contact-list li:nth-child(3){
-    background: rgb(126, 126, 126);
+    background: #2867B2;;
     color: white;
 }
     
@@ -60,5 +60,8 @@
     .contact-icon {
         font-size: 12px;
         
+    }
+    .contact {
+        left: -6.1rem
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "../styles/Contact.scss"
 import { AiFillGithub, AiOutlineMail } from "react-icons/ai"
-import {FaPortrait} from "react-icons/fa"
+import {FaPortrait, FaLinkedin} from "react-icons/fa"
 
 export default class Contact extends Component {
     render() {
@@ -16,7 +16,7 @@ export default class Contact extends Component {
                 e.preventDefault();
                 window.open(this.makeHref=('mailto:tamasendre.farago@gmail.com'));}}>
                 <span>email</span> <AiOutlineMail className="contact-icon"/></li>
-            <li><span>resume</span> <FaPortrait className="contact-icon"/></li>
+            <li><span>LinkedIn</span> <FaLinkedin className="contact-icon"/></li>
         </ul>
         </div>
         )
