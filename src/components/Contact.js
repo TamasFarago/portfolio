@@ -16,7 +16,11 @@ export default class Contact extends Component {
                 e.preventDefault();
                 window.open(this.makeHref=('mailto:tamasendre.farago@gmail.com'));}}>
                 <span>email</span> <AiOutlineMail className="contact-icon"/></li>
-            <li><span>LinkedIn</span> <FaLinkedin className="contact-icon"/></li>
+            <li onClick={(e) => {
+                e.preventDefault();
+                window.open(this.makeHref=('https://www.linkedin.com/in/tamasendre-farago'));}}>
+                <span>LinkedIn</span> <FaLinkedin className="contact-icon"/>
+            </li>
         </ul>
         </div>
         )
