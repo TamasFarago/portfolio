@@ -36,12 +36,12 @@ export default function Portfolio() {
                         <img src={Mobile} className="mobile"/>
                     </div>
                     </Link>
-                    {/* <Link to="/projects/desktop">
+                    <Link to="/projects/desktop">
                     <div className="select-container_box">
                         <h2>Websites</h2>
                         <img src={Desktop} className="desktop"/>
                     </div>
-                    </Link> */}
+                    </Link>
                 </div>
             </section>
             </>

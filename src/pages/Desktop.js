@@ -6,6 +6,7 @@ import project2 from "../images/project2.png"
 import project3 from "../images/project3.png"
 import project4 from "../images/project-4-big.png"
 import netflix from "../images/netflix.png"
+import netflix2 from "../images/netflix2.png"
 import modal1 from "../images/project-1-modal.png"
 import modal2 from "../images/project-2-modal.png"
 import modal3 from "../images/project-3-modal.png"
@@ -99,21 +100,15 @@ export default class Desktop extends Component {
                                     </div>
                                 </div>
                         </div>
-                        <div className="row2">
-                                <div className="project-container" >
+                        <div className="row3">
+                                <div className="project-container netflix" >
                                     <div className="project-3 project">
                                         <h5>Netflix Clone</h5>
                                         <img src={netflix} alt="project3"></img>
                                         <button className="project-btn btn3" onClick={this.toggleNetflix}>View Project</button>
                                     </div>
                                 </div>
-                                <div className="project-container prjct-4" >
-                                    <div className="project-4 project">
-                                        <h5>Portfolio</h5>
-                                        <img src={project4} alt="project4" className="four"></img>
-                                        <button className="project-btn btn4" onClick={this.togglePort}>View Project</button>
-                                    </div>
-                                </div>
+                                
                         </div>
                         <div className={this.state.isEcommerceOpen? "project-modal modal-open" : "modal-closed project-modal"}>
                             <div className="modal-grid">
@@ -290,8 +285,10 @@ export default class Desktop extends Component {
 
                         <div className={this.state.isNetflixOpen? "project-modal modal-open" : "modal-closed project-modal"}>
                             <div className="modal-grid">
-                                <div className="modal-picture">
-                                    <img src={modal4} alt="modal4"></img>
+                                <div className="modal-picture" onClick={(e) => {
+                                            e.preventDefault();
+                                            window.open(this.makeHref=('https://ntflxclone.netlify.app'));}} >
+                                    <img src={netflix2} alt="modal4"></img>
                                 </div>
                                 <div className="modal-info">
                                     <div className="project-header">
@@ -303,7 +300,7 @@ export default class Desktop extends Component {
                                     </div>
                                     <ul className="project-technology">
                                         <li>HTML</li>
-                                        <li>Styled Components</li>
+                                        <li>SCSS</li>
                                         <li>ReactJs</li>
                                         <li>responsive</li>
                                         <li>Firebase</li>
@@ -311,18 +308,13 @@ export default class Desktop extends Component {
                                     <div className="modal-about">
                                         <h5>about</h5>
                                         <div className="about-text">
-                                            <p>A netflix clone which includes user authentication including sign up form.</p>
+                                            <p>A netflix clone which includes user authentication including a sign up form.</p>
                                         </div>
                                     </div>
                                     <div className="modal-buttons">
-                                    <button onClick={(e) => {
-                                            e.preventDefault();
-                                            window.open(this.makeHref=('https://tamasfarago.github.io/portfolio'));}} 
-                                            className="modal-btn-1"><FaEye className="eye"/>  demo</button>
-                                        <button onClick={(e) => {
-                                            e.preventDefault();
-                                            window.open(this.makeHref=('https://github.com/TamasFarago/portfolio'));}} 
-                                            className="modal-btn-2"><FaCode className="code" /> code</button>
+                                   
+                                            
+                                        
                                     </div>
                                 </div>
 
